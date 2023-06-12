@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "NuovoProdotto";
+}
+
+<h1>Inserisci i dati del nuovo prodotto</h1>
+<form method="post">
+    <div class = "container">
+        <div class="row">
+            <div class="col">
+                Nome:
+            </div>
+            <div class ="col">
+                <input type="text" name="Nome" required/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Prezzo:
+            </div>
+            <div class ="col">
+                <input type="text" name="Prezzo" />
+            </div>
+        </div>
+        <div class="col">
+            <input type="submit" value="Salva"/>
+        </div>
+    </div>
+</form>

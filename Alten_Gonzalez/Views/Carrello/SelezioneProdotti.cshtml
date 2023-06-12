@@ -1,0 +1,14 @@
+﻿@model Prodotti
+@{
+    ViewData["Title"] = "SelezioneProdotti";
+}
+
+<h1>Seleziona i prodotti</h1>
+<form method="post">
+   <select id="itemSelect" multiple>
+        <select class = "form-select" size="1" asp-for="Id" asp-items="ViewBag.Prodotti"></select>
+    </select>
+    </div>
+        <input type="submit" value="Compra"/>
+    </div>
+</form>

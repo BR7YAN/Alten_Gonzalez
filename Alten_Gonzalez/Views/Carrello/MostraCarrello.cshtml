@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "MostraCarrello";
+}
+
+<h1>Ecco qui la tua lista della spesa: </h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Nome Prodotto</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Elenco)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nome</td>
+        </tr>
+    }
+</table>

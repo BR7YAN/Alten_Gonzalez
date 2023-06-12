@@ -1,0 +1,17 @@
+﻿@model Utenti
+@{
+    ViewData["Title"] = "Acquisto";
+}
+
+<h1>Seleziona il tuo nome</h1>
+<form method="post">
+    <div class ="col">
+        <select class = "form-select" size="1" name="idShopper" asp-for="Id" asp-items="ViewBag.Utenti"></select>
+    </div>
+    <div class ="col">
+        <select class = "form-select" size="1" name="idProdotto" asp-for="Id" asp-items="ViewBag.Prodotti"></select>
+    </div>
+    <div class="col">
+        <input type="submit" value="Avanti"/>
+    </div>
+</form>

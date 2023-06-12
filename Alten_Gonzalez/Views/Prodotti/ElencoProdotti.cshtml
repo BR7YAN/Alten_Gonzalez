@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Prodotti>
+@{
+	ViewData["Title"] = "ElencoProdotti";
+}
+
+<h1>Elenco Prodotti</h1>
+<hr />
+<table class = "table table-bordered">
+	<tr>
+		<th>ID Prodotto</td>
+		<th>Nome</td>
+		<th>Prezzo</td>
+		<th></th>
+	</tr>
+	@foreach (var item in Model)
+	{
+					<tr>
+						<td>@item.Id</td>
+						<td>@item.Nome</td>
+						<td>@item.Prezzo</td>
+					</tr>
+	}
+</table>
